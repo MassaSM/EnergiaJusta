@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1100px){
+    .banner .banner__item .col.energia__limpa {
+      padding: 180px 64px 120px;
+    }
+    .banner .banner__item .col img{
+      object-position: right;
+    }
+    .menu__topo ul{
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      transform: translateX(-100%);
+      position: absolute;
+    }
+    .menu__topo ul li a{
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .menu__topo ul.active{
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(14,32,46, .9);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      height: 100vh;
+      width: 100%;
+      display: flex;      ;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      z-index: 4;
+    }
+    .menu-toggle {
+      display: block;
+      color: var(--white);
+      font-size: 40px;
+    }
+    .banner .banner__item,
+    .problema .dFlex,
+    .footer .sitemap .dFlex,
+    .footer .dFlex,
+    .nossa__causa .container__cards,
+    .entenda__o__tema .container__cards .item__card,
+    .noticias .container__noticias{
+      flex-wrap: wrap;
+    }
+    .footer .sitemap .dFlex,
+    .footer .dFlex{
+      gap: 40px;
+    }
+    .banner .banner__item .col{
+      width: 100%;
+    }
+    .problema .txt__problema{
+      max-width: initial;
+    }
+    .problema .dFlex, .nossa__causa .container__cards,
+    .entenda__o__tema .container__cards .item__card{
+      justify-content: center;
+      text-align: center;
+    }
+    .noticias .container__noticias{
+      justify-content: center;
+    }
+    .nossa__causa .container__cards .item__card .icon__card img{
+      margin: 0 auto;
+    }
+    .entenda__o__tema .container__cards{
+      grid-template-columns: 1fr;
+    }
+  }
+
+@media only screen and (max-width: 640px){
+    .banner .banner__item .col.energia__limpa {
+        padding: 180px 32px 120px;
+    }
+    .problema .voce__sabia,
+    .footer .copyright nav ul{
+      flex-wrap: wrap;
+    }
+    .footer .copyright nav ul{
+      gap: 8px;
+    }
+    img {
+      height: auto;
+      display: block;
+    }
+    .nossa__causa .container__cards .item__card{
+      padding: 32px;
+    }
+}

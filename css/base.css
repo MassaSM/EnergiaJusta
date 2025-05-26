@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --font: "IBM Plex Sans", sans-serif;
+    --blue: #0E202E;
+    --blue800: #1E395D;
+    --blue200: #22B7F2;
+    --yellow: #E2D603;
+    --white: #ffffff;
+    --orange: #F29863;
+    --black: #000000;
+    --grey: #FBFBFB;
+    --grey200: #7D8A94;
+}
+
+body{
+    font-family: var(--font);  
+    overflow-x: hidden;  
+}
+
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+img, iframe{
+    max-width: 100%;
+}
+
+h1{font-size: 48px; line-height: 60px;}
+h2{font-size: 40px; line-height: 48px;}
+h3{font-size: 24px; line-height: 32px;}
+h4{font-size: 20px; line-height: 28px;}
+
+@media only screen and (max-width: 640px){
+    h1{font-size: 40px; line-height: 48px;}
+    h2{font-size: 24px; line-height: 32px;}
+    h3{font-size: 16px; line-height: 24px;}
+    h4{font-size: 14px; line-height: 24px;}
+}
+
+.dFlex{
+    display: flex;
+}
+
+.button{
+    border-radius: 30px;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: transform .2s ease-out, filter .2s linear;
+}
+
+.button:hover{
+    filter: brightness(120%);
+    transform: translateY(-4px);
+}
+
+.button.btn__blue200{
+    background: var(--blue200);
+}
+
+.button.btn__yellow{
+    background: var(--yellow);
+}
+
+
+/*Accordion*/
+details {
+  padding: 32px 0;
+  border-bottom: solid 1px rgba(0,0,0,.1);
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 0;
+}
+
+/* Seta fechada (para a direita) */
+details .icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjM3NSA2LjI1QzE0LjY4NzUgNi4yNSAxNSA2LjU2MjUgMTUgNi44NzVWOC4xMjVDMTUgOC40NzY1NiAxNC42ODc1IDguNzUgMTQuMzc1IDguNzVIOC43NVYxNC4zNzVDOC43NSAxNC43MjY2IDguNDM3NSAxNSA4LjEyNSAxNUg2Ljg3NUM2LjUyMzQ0IDE1IDYuMjUgMTQuNzI2NiA2LjI1IDE0LjM3NVY4Ljc1SDAuNjI1QzAuMjczNDM4IDguNzUgMCA4LjQ3NjU2IDAgOC4xMjVWNi44NzVDMCA2LjU2MjUgMC4yNzM0MzggNi4yNSAwLjYyNSA2LjI1SDYuMjVWMC42MjVDNi4yNSAwLjMxMjUgNi41MjM0NCAwIDYuODc1IDBIOC4xMjVDOC40Mzc1IDAgOC43NSAwLjMxMjUgOC43NSAwLjYyNVY2LjI1SDE0LjM3NVoiIGZpbGw9IiNFMkQ2MDMiLz4KPC9zdmc+Cg==');
+}
+
+/* Quando aberto, seta para baixo */
+details[open] .icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMyIgdmlld0JveD0iMCAwIDE1IDMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xNC4zNzUgMC4yNUMxNC42ODc1IDAuMjUgMTUgMC41NjI1IDE1IDAuODc1VjIuMTI1QzE1IDIuNDc2NTYgMTQuNjg3NSAyLjc1IDE0LjM3NSAyLjc1SDAuNjI1QzAuMjczNDM4IDIuNzUgMCAyLjQ3NjU2IDAgMi4xMjVWMC44NzVDMCAwLjU2MjUgMC4yNzM0MzggMC4yNSAwLjYyNSAwLjI1SDE0LjM3NVoiIGZpbGw9IiNFMkQ2MDMiLz4KPC9zdmc+Cg==');
+  margin-top: 6px;
+}
