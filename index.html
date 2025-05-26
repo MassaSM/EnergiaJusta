@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="preload" as="image" href="/assets/images/mark.png">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -360,112 +361,73 @@
     <footer class="footer" role="contentinfo">
         <div class="center">
             <div class="sitemap">
-                <div class="center">
-                    <div class="dFlex">
-                        <div class="about" data-aos="fade-up" data-aos-duration="800">
-                            <div class="logo">
-                                <a href="/"><img src="/assets/images/logoEnergiaJusta.svg" width="187" height="68" alt="Logo Energia Justa" title="Logo Energia Justa"></a>
-                            </div>
-                            <p>O movimento Energia Justa defende uma transição energética equilibrada, onde todos possam se beneficiar das energias renováveis sem criar novas desigualdades.</p>
-                            <p><b>Energia Sustentável é Energia Justa.</b></p>
-                        </div>
+            <div class="center">
+                <div class="dFlex">
 
-                        <div class="links__rapidos" data-aos="fade-up" data-aos-duration="800">
-                            <h4>Links Rápidos</h4>
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#problema" aria-label="Ir para a seção O Problema" title="O Problema">
-                                            O Problema
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#causa" aria-label="Ir para a seção Nossa Causa" title="Nossa Causa">
-                                            Nossa Causa
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#tema" aria-label="Ir para a seção Entenda o Tema" title="Entenda o Tema">
-                                            Entenda o Tema
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#noticias" aria-label="Ir para a seção Notícias" title="Notícias">
-                                            Notícias
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#faq" aria-label="Ir para a seção FAQ" title="FAQ">
-                                            FAQ
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                        <div class="contato">
-                            <div class="redes__sociais" data-aos="fade-up" data-aos-duration="800">
-                                <h4>Redes Sociais</h4>
-                                <nav>
-                                    <ul>
-                                       <li>
-                                            <a href="https://twitter.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://facebook.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
-                                                <i class="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://instagram.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://youtube.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
-                                                <i class="fa-brands fa-youtube"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-
-                            <div class="email" data-aos="fade-up" data-aos-duration="800">
-                                <h4>Contato</h4>
-                                <a href="mailto:contato@energiajusta.org.br" aria-label="Enviar email para contato energia justa">
-                                    contato@energiajusta.org.br
-                                </a>
-                            </div>
-                        </div>
+                <section class="about" data-aos="fade-up" data-aos-duration="800">                
+                    <div class="logo">
+                    <a href="/" title="Energia Justa - Página inicial">
+                        <img src="/assets/images/logoEnergiaJusta.svg" width="187" height="68" alt="Logo Energia Justa" />
+                    </a>
                     </div>
+                    <p>O movimento Energia Justa defende uma transição energética equilibrada, onde todos possam se beneficiar das energias renováveis sem criar novas desigualdades.</p>
+                    <p><strong>Energia Sustentável é Energia Justa.</strong></p>
+                </section>
+
+                <section class="links__rapidos" data-aos="fade-up" data-aos-duration="800" aria-labelledby="footer-links-title">
+                    <h2 id="footer-links-title">Links Rápidos</h2>
+                    <nav aria-label="Links rápidos do site">
+                    <ul>
+                        <li><a href="#problema" aria-label="Ir para a seção O Problema">O Problema</a></li>
+                        <li><a href="#causa" aria-label="Ir para a seção Nossa Causa">Nossa Causa</a></li>
+                        <li><a href="#tema" aria-label="Ir para a seção Entenda o Tema">Entenda o Tema</a></li>
+                        <li><a href="#noticias" aria-label="Ir para a seção Notícias">Notícias</a></li>
+                        <li><a href="#faq" aria-label="Ir para a seção FAQ">FAQ</a></li>
+                    </ul>
+                    </nav>
+                </section>
+
+                <section class="contato" aria-labelledby="footer-contato-title">
+                    <div class="redes__sociais" data-aos="fade-up" data-aos-duration="800" aria-label="Redes sociais do Movimento Energia Justa">
+                    <h3  id="footer-contato-title"  class="visually-hidden">Siga-nos</h3>
+                    <nav>
+                        <ul>
+                        <li><a href="https://twitter.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://facebook.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="https://instagram.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://youtube.com/seuPerfil" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </nav>
+                    </div>
+
+                    <div class="email" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="visually-hidden">Email para contato</h3>
+                    <a href="mailto:contato@energiajusta.org.br" aria-label="Enviar email para contato energia justa">
+                        contato@energiajusta.org.br
+                    </a>
+                    </div>
+                </section>
+
                 </div>
+            </div>
             </div>
 
             <div class="copyright">
-                <div class="center">
-                    <div class="dFlex">
-                        <p><small>© 2023 Movimento Energia Justa. Todos os direitos reservados.</small></p>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="https://seudominio.com/termos-de-uso" target="_blank" rel="noopener noreferrer" aria-label="Termos de Uso" title="Termos de Uso">
-                                        Termos de Uso
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://seudominio.com/politica-de-privacidade" target="_blank" rel="noopener noreferrer" aria-label="Política de Privacidade" title="Política de Privacidade">
-                                        Política de Privacidade
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+            <div class="center">
+                <div class="dFlex" role="contentinfo">
+                <p><small>© 2023 Movimento Energia Justa. Todos os direitos reservados.</small></p>
+                <nav aria-label="Políticas do site">
+                    <ul>
+                    <li><a href="https://seudominio.com/termos-de-uso" target="_blank" rel="noopener noreferrer" aria-label="Termos de Uso">Termos de Uso</a></li>
+                    <li><a href="https://seudominio.com/politica-de-privacidade" target="_blank" rel="noopener noreferrer" aria-label="Política de Privacidade">Política de Privacidade</a></li>
+                    </ul>
+                </nav>
                 </div>
             </div>
+            </div>
         </div>
-    </footer>
+        </footer>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
