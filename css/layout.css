@@ -258,6 +258,10 @@
   min-width: 60px;
 }
 
+.entenda__o__tema .container__cards .item__card .icon__card img{
+  margin: 0 auto;
+}
+
 .entenda__o__tema .container__cards .item__card .desc__card{
   color: var(--white);
 }

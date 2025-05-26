@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/responsivo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
@@ -121,7 +123,7 @@
                         </div>
                     </div>
                     <div class="col" data-aos="fade-left">
-                        <img src="/assets/images/modelo.jpg" alt="Modelo Banner" loading="lazy" decoding="async" title="Modelo Banner">
+                        <img src="/assets/images/modelo.webp" alt="Modelo Banner" loading="lazy" decoding="async" title="Modelo Banner">
                     </div>
                 </div>
             </div>
@@ -198,7 +200,7 @@
         </section>
 
         <section class="video">
-            <img src="/assets/images/EnergiaJustaIcon.svg" class="iconEnergia" width="170" height="126">
+            <img src="/assets/images/EnergiaJustaIcon.svg" alt="Ícone Energia" class="iconEnergia" width="170" height="126">
             <video src="/assets/video/video.mp4" autoplay muted loop playsinline class="video__bg"></video> 
         </section>
 
@@ -208,7 +210,7 @@
                 <div class="container__cards">
                     <div class="item__card" data-aos="fade-up" data-aos-duration="800">
                         <div class="icon__card">
-                            <img src="/assets/images/icons/icon-4.svg" alt="" width="" height="" loading="lazy" decoding="async" title="" />
+                            <img src="/assets/images/icons/icon-4.svg" alt="" width="32" height="40" loading="lazy" decoding="async" title="" />
                         </div>
                         <div class="desc__card">
                             <p class="title">O que é Geração Distribuída</p>
@@ -218,7 +220,7 @@
 
                     <div class="item__card" data-aos="fade-up" data-aos-duration="1600">
                         <div class="icon__card">
-                            <img src="/assets/images/icons/icon-5.svg" alt="" width="" height="" loading="lazy" decoding="async" title="" />
+                            <img src="/assets/images/icons/icon-5.svg" alt="" width="40" height="40" loading="lazy" decoding="async" title="" />
                         </div>
                         <div class="desc__card">
                             <p class="title">Inversão de fluxo na rede</p>
@@ -228,7 +230,7 @@
 
                     <div class="item__card" data-aos="fade-up" data-aos-duration="1600">
                         <div class="icon__card">
-                            <img src="/assets/images/icons/icon-6.svg" alt="" width="" height="" loading="lazy" decoding="async" title="" />
+                            <img src="/assets/images/icons/icon-6.svg" alt="" width="52" height="41" loading="lazy" decoding="async" title="" />
                         </div>
                         <div class="desc__card">
                             <p class="title">Impactos tarifários do modelo atual</p>
@@ -272,7 +274,7 @@
 
                     <div class="item__noticia" data-aos="fade-up" data-aos-duration="1000">
                         <div class="img__noticia">
-                            <img src="/assets/images/icons/icon-8.svg" class="play"/>
+                            <img src="/assets/images/icons/icon-8.svg" alt="Ícone Play" class="play"/>
                             <img src="/assets/images/noticias/home/img-noticia.jpg" alt="Imagem Notícia" width="409" height="227" loading="lazy" decoding="async" title="Imagem Notícia" />
                         </div>
                         <div class="desc__noticia">
